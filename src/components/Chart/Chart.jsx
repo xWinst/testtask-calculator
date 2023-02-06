@@ -72,7 +72,6 @@ const Chart = ({ storage, transfer }) => {
       </label>
     ));
   };
-  
 
   return (
     <>
