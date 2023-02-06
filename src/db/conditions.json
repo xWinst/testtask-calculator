@@ -1,0 +1,32 @@
+[
+  {
+    "provider": "backblaze",
+    "color": "red",
+    "minPayment": 7,
+    "storage": { "value": 0.005 },
+    "transfer": 0.01
+  },
+  {
+    "provider": "bunny",
+    "color": "orange",
+    "maxPayment": 10,
+    "storage": { "HDD": 0.01, "SSD": 0.02 },
+    "transfer": 0.01
+  },
+
+  {
+    "provider": "scaleway",
+    "color": "darkviolet",
+    "storage": { "Multi": 0.06, "Single": 0.03 },
+    "freeStorage": 75,
+    "transfer": 0.02,
+    "freeTransfer": 75
+  },
+  {
+    "provider": "vultr",
+    "color": "cyan",
+    "minPayment": 5,
+    "storage": { "value": 0.01 },
+    "transfer": 0.01
+  }
+]

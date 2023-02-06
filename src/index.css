@@ -1,0 +1,48 @@
+@import 'modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --main-color: #222222;
+  --second-color: #0b3a5a;
+  --accent-color: #49e1af;
+
+  --bg-gradient: linear-gradient(-60deg, #ffffff 40%, #6e9bb9);
+
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1280px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

@@ -1,0 +1,86 @@
+.list {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 320px;
+}
+
+.list::after {
+  content: '';
+  position: absolute;
+  bottom: 76px;
+  width: 100%;
+  border-bottom: 3px solid var(--second-color);
+}
+
+.item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80px;
+  gap: 8px;
+}
+
+.provider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+}
+
+.options {
+  display: flex;
+  gap: 4px;
+  font-size: 8px;
+}
+
+.radioBtn {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--second-color);
+  cursor: pointer;
+}
+
+.radio:checked {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .list::after {
+    height: 100%;
+    top: 0;
+    left: 126px;
+
+    border-bottom: none;
+    border-left: 3px solid var(--second-color);
+  }
+
+  .item {
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+  }
+
+  .provider {
+    width: 80px;
+  }
+}
