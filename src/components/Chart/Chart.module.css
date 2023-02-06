@@ -63,6 +63,8 @@
     align-items: flex-start;
     width: 100%;
     max-width: 600px;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .list::after {
@@ -82,5 +84,15 @@
 
   .provider {
     width: 80px;
+  }
+
+  .options {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .radio {
+    width: 10px;
+    height: 10px;
   }
 }
